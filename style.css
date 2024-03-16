@@ -878,9 +878,13 @@ body a,
 .featured-media object { display: block; }
 
 .featured-media img {
-	display: block;
-	width: 100%;
-	height: auto;
+    display: block;
+    width: auto;
+    /* fixme: picture height here <-------------------------------------- by beni */
+    max-height: 80vh;
+    max-width: 100%;
+    margin: auto;
+    /*height: auto;*/
 }
 
 .posts .format-standard .featured-media:hover img,
