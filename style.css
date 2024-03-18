@@ -878,13 +878,20 @@ body a,
 .featured-media object { display: block; }
 
 .featured-media img {
-    display: block;
-    width: auto;
     /* fixme: picture height here <-------------------------------------- by beni */
-    max-height: 80vh;
+    display: block;
+    width: 100%;
     max-width: 100%;
-    margin: auto;
-    /*height: auto;*/
+    max-height: 80vh;
+    height: auto;
+    object-fit: contain;
+}
+
+.post-container .featured-media img {
+	object-fit: cover;
+	aspect-ratio: 16/10;
+	height: auto;
+	width: 100%;
 }
 
 .posts .format-standard .featured-media:hover img,
